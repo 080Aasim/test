@@ -547,7 +547,7 @@ a {
 
 /* Responsiveness starte here */
 /* Styles for mobile devices */
-@media (max-width: 700px) {
+@media (max-width: 426px) {
   .desktop {
     display: none;
   }
@@ -556,6 +556,9 @@ a {
   }
   #nav .part1 {
     display: none;
+  }
+  #nav{
+    padding: 10px;
   }
   #nav .part11 {
     display: flex;
@@ -578,15 +581,20 @@ a {
     color: rgb(255, 254, 254);
   }
   #page1 {
+    position: relative;
     height: 110vh;
     border-radius: 0 0 6em 6em;
   }
   #iconSocial {
+    position: absolute;
+    top: 12px;
+    right: 8px;
     font-size: 1.5em;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1em;
+    gap: 0.4em;
+    flex-direction: column;
   }
   #iconSocial i {
     display: flex;
@@ -614,29 +622,33 @@ a {
     padding-top: 13%;
   }
   #heading {
-    font-size: 0.6em;
+    font-size: 0.4em;
   }
   #profile #btn {
     width: 50vw;
     height: 8vh;
   }
   .motion {
-    margin-top: 10vh;
+    /* border: 2px solid red; */
+    margin-top: 7vh;
   }
   .motion img {
     width: 50vh;
     height: auto;
   }
   #ppart1 h1 {
-    font-size: 1.9em;
+    /* border: 2px solid red; */
+    padding: 25px;
+    margin-bottom: 20px;
+    font-size: 1.4em;
   }
   #ppart2 p {
     width: 35vw;
     height: 8vh;
     font-size: 1em;
   }
-  #projectss .prj1:hover {
-    width: 55vw;
+  #projectss .m_prj:hover {
+    width: 20vw;
     height: 40vh;
   }
   #page3 {
@@ -647,14 +659,23 @@ a {
   #page3 h1 {
     font-size: 1.5em;
   }
-  #page3 #btn {
-    display: flex;
-    gap: 5em;
-    padding-top: 2em;
+  #page3 #btn1 {
+    /* border: 2px solid red; */
+    padding: 0;
+    gap: 10px;
   }
-  #btn .sbtn {
-    width: 30vw;
-    height: 12vw;
+  #btn1 .e_btn {
+    padding: 0;
+    width: 120px;
+    height: 16vw;
+    font-size: 20px;
+  }
+
+  #btn1 .w_btn {
+    padding: 0 2px;
+    width: 140px;
+    height: 16vw;
+    font-size: 20px;
   }
 }
 
